@@ -1,47 +1,31 @@
-# Epidemiological Modeling Research Project
-**Author: Amos Mwaura**
+# Advanced Epidemiological Modeling Research Project
+Author: Amos Mwaura
 
-A comprehensive implementation of SIR/SEIR epidemiological models for analyzing disease outbreak dynamics.
-
-## Overview
-
-This project implements mathematical models for understanding infectious disease transmission patterns, with applications to real-world outbreak data.
+Comprehensive SIR/SEIR epidemiological models with demographics and mortality for research applications.
 
 ## Research Capabilities
 
-- SIR Model Implementation: Complete differential equation solver
-- Data Analysis: Historical outbreak case studies including 1978 influenza epidemic  
-- Visualization Suite: Professional epidemic curve plotting and phase portraits
-- Parameter Estimation: Tools for calculating reproduction numbers and outbreak metrics
+### Model Types
+- Classical SIR: Basic outbreak dynamics
+- SIR + Demographics: Endemic disease persistence  
+- SIR + Mortality: High-fatality pathogen analysis
+- SEIR + Demographics: Exposed compartment modeling
 
-## Key Findings
-
-Current model analysis demonstrates:
-- Basic reproduction number (R0) calculation capabilities
-- Peak infection timing prediction
-- Attack rate estimation
-- Population dynamics visualization
-
-## Technical Implementation
-
-- Core Functions: R/sir_functions.R, R/plotting_functions.R
-- Data Sources: Historical outbreak datasets in data/
-- Outputs: Visualizations saved to output/figures/
+### Validated Research Findings
+- Boarding School: R0=3.96, 95.7% attack rate
+- Endemic Equilibrium: Persistent 10% infection rate
+- High Mortality: 26.6% population-level deaths
 
 ## Usage
-
-Load functions and analyze outbreak scenario:
+Load framework and run analysis:
 source("R/sir_functions.R")
-source("R/plotting_functions.R")
-results <- solve_sir_model(initial_state, parameters, times)
-plot_sir_results(results)
+source("R/advanced_sir_functions.R") 
+source("examples/comprehensive_analysis.R")
 
 ## Applications
-
-This modeling framework can be applied to:
-- Public health policy analysis
-- Outbreak response planning  
-- Academic epidemiological research
+- Public health policy modeling
+- Academic epidemiological research  
+- Outbreak response planning
 - Disease surveillance systems
 
-Research project for epidemiological modeling and analysis
+Advanced modeling framework for epidemiological research and policy analysis.
